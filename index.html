@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/navigation.js" defer></script>
 </head>
+
 <body>
 
     <!-- header con dos nav; uno a la izquierda (el logo), otro a la derecha (productos, sobre nosotros, contacto)-->  
-    <header>
+    <header id="header">
         <nav class="logo">
             <a href="index.html"><img src="media/img/logo.jpg" alt="Logo Landing page" width="100px" height="50px"></a>
         </nav>
         
         <nav class="lateral_menu">
-            <!-- se han quitado los <li></li> de cada uno de los enlaces y se han cambiado por un <ul></ul> -->
             <ul>
-                <a href="productos.html">Productos</a>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Contacto</a>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- sección inicial, cordilería de alta calidad -->
-    <section>
+    <section id="section1">
+        <br>
         <h1>Cordilería de alta calidad</h1>
         <!-- contiene el texto y el botón, localizado a la izquierda -->
         <nav>
@@ -46,7 +47,7 @@
 
 
     <!-- sección "sobre nosotros"; contiene calidad, compromiso y valores -->
-    <section>
+    <section id="section2">
         <!-- primer card -->
         <div>
             <h3>Calidad</h3>
@@ -79,7 +80,7 @@
 
 
     <!-- sección contacto, formulario -->
-    <section>
+    <section id="section3">
         <h1>Contacta con nosotros</h1>
         <input type="text" placeholder="Nombre">
         <input type="text" placeholder="Teléfono">
@@ -91,7 +92,7 @@
 
 
     <!-- sección de localización, contacto y redes sociales -->
-    <section>
+    <section id="section4">
         <nav>
             <p><strong>Localización:</strong></p>
             <p>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</p>
@@ -114,7 +115,7 @@
 
 
     <!-- margen final; contiene nombreEmpresa, año y el @ -->
-    <footer>
+    <footer id="footer">
         <p>Trenzatress, S.L. 2023 @</p>
     </footer>
 </body>
