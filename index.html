@@ -7,6 +7,9 @@
     <title>Trenzatress</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/navigation.js" defer></script>
+
+    <!-- librería que vamos a utilizar para los alerts de SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -108,7 +111,7 @@
         <br><br>
         <textarea type="text" placeholder="Tu mensaje" cols="30" rows="10"></textarea>
         <br><br><br>
-        <button><strong>Enviar</strong></button>
+        <button id="send" type="button" onclick="alerta()"><strong>Enviar</strong></button>
         <br><br><br>
     </section>
 
