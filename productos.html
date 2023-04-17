@@ -5,10 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navigation.js" defer></script>
+
+    <!-- librería que vamos a utilizar para los alerts de SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <a href="index.html"><img src="media/img/logo.jpg" alt="Logo Landing page"></a>
     
-    <p>Productos</p>
+    <header id="header">
+        <nav class="logo">
+            <a href="index.html"><img src="media/img/logo.jpg" alt="Logo Landing page" width="100px" height="50px"></a>
+        </nav>
+        <!-- <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button> -->
+        
+        <!-- <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button> -->
+        <nav class="lateral_menu">
+            <ul>
+                <!-- ENLAZAR LAS SECCIONES QUE QUEDAS -->
+                <li><a href="#">Productos</a></li> <!-- lo manda al inicio de esa misma página -->
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCION DE DESCUENTOS -->
+    <br>
+    <section class="discount">
+        <p>Descuentos a partir de 50€</p>
+    </section>
+
+    <!-- SECCION CATEGORIAS, con el menú desplegable -->
+    <br>
+    <section class="category">
+        <p>Categorías</p>
+    </section>
+
+    <!-- SECCION, de esta sección ahora mismo pasamos 
+    <section id="carrusell">
+
+    </section>-->
+
+    <!-- SECCION CARDS, muestra los productos en cards -->
+    <!-- en este apartado vamos a hacer un grid específico para esto -->
+    <br>
+    <section id="cards_container">
+        <div class="product">
+            <a href="" onclick="alCarro()"><img class="carrito" src="media/img/carrito.png" alt="carrito" width="20px" height="20px"></a>
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+
+        <div class="product">
+            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <!-- ICONO CARRITO -->
+            <p class="titulo">Rieles Extensibles 200m</p>
+            <p class="precio">12€</p>
+        </div>
+    </section>
+
+    <br><br>
+    <!-- sección de localización, contacto y redes sociales -->
+    <br><br>
+    <section id="section4">
+        <br><br>
+        <nav class="sub_location">
+            <p><strong>Localización:</strong></p>
+            <p>Ctra. Callosa - Catral, 274 (Barrio San<br> José-Lo Meca)</p>
+            <p>03360 Callosa de Segura, Alicante</p>
+        </nav>
+        
+        <nav class="sub_contact">
+            <p><strong>Contacto:</strong></p>
+            <p>Teléfono: +34 965310199</p>
+            <p>Correo electrónico: trenzatress@gmail.com</p>
+        </nav>
+
+        <nav class="sub_socialmedia">
+            <p><strong>Redes Sociales:</strong></p>
+            <p>Instagram: @trenzatress</p>
+            <p>Facebook: trenzatress</p>
+            <p>Linkedin: Trenzatress</p>
+        </nav>
+    </section>
+
+
+    <br><br>
+    <!-- margen final; contiene nombreEmpresa, año y el @ -->
+    <footer id="footer">
+        <p>Trenzatress, S.L. 2023 ®</p>
+    </footer>
 </body>
 </html>
