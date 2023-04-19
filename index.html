@@ -4,147 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrenzaTress</title>
+    <title>Trenzatress</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/navigation.js" defer></script>
 
-    <!-- librería que vamos a utilizar para los alerts de SweetAlert -->
+    <!-- libreria que vamos a utililzar para los alerts es Sweet alert --> 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/navigation.js" defer></script>
 </head>
-
 <body>
 
-    <!-- header con dos nav; uno a la izquierda (el logo), otro a la derecha (productos, sobre nosotros, contacto)-->  
-    <header id="header">
-        <nav class="logo">
-            <a href="index.html"><img src="media/img/logo.jpg" alt="Logo Landing page" width="100px" height="50px"></a>
-        </nav>
-        
-        <nav class="lateral_menu">
-            <ul>
+    <header>
+        <img class="logo" src="media/img/logo.jpg" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="#section2">Sobre Nosotros</a></li>
-                <li><a href="#section3">Contacto</a></li>
+                <li><a href="#sobreNosotros">Sobre Nosotros</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- sección inicial, cordilería de alta calidad -->
-    <br>
-    <section id="section1">
-        <br><br>
-        <!-- contiene el texto y el botón, localizado a la izquierda -->
-        <nav class="text">
-            <h1>Cordilería de alta calidad</h1>
-            <p>
-                Especializados en el trenzado para<br> decoración y especializada en la<br> fabricación 
-                y distribución de cordones<br> para rieles extensibles de cortinas.
-            </p>
-            <br>
-            <button><strong>Ver productos</strong></button>
-        </nav>
-
-        <!-- contiene la imagen, localizada a la derecha -->
-        <nav class="my_image">
-            <img src="media/img/inicial.jpg" alt="Imagen inicial" width="200px" height="250px">
-        </nav>
-    </section>
-
-
-    <!-- sección "sobre nosotros"; contiene calidad, compromiso y valores -->
-    <section id="section2">
-        <!-- primer card -->
-        <div class="card">
-            <br>
-            <h3>Calidad</h3>
-            <br>
-            <p>
-                La calidad en la fabricación y el<br> servicio es para nosotros 
-                la mayor<br> inversión y garantía de futuro. Y<br> unos productos fabricados 
-                con<br> materias primas de alta calidad,<br> contrastada y garantizada 
-                que<br> responden al deseo de los clientes<br> más exigentes.
-            </p>
-            <br>
+    <main>
+        <div class="intro">
+            <div class="text">
+                <h1>Cordeleria de alta calidad</h1>
+                <p>
+                    En la actualidad Trenzatress S.L. es una de las empresas más destacadas en el sector de la
+                    decoración,
+                    especializada en la fabricación y distribución de cordones para rieles extensibles de cortinas.
+                    Además,
+                    ofrecemos una amplia variedad de cordones para panel japonés, rieles de aluminio, estores, hilos
+                    para mosquiteras
+                    y en general cordones trenzados para la decoración.
+                </p>
+                <div class="boton-productos">Ver Productos</div>
+            </div>
+            <img src="media/img/inicial.jpg">
         </div>
 
-        <!-- segundo card -->
-        <div class="card">
-            <br>
-            <h3>Compromiso</h3>
-            <br>
-            <p>
-                La calidad en la fabricación y el<br> servicio es para nosotros 
-                la mayor<br> inversión y garantía de futuro. Y<br> unos productos fabricados 
-                con<br> materias primas de alta calidad,<br> contrastada y garantizada 
-                que<br> responden al deseo de los clientes<br> más exigentes.
-            </p>
-            <br>
+        <div id="sobreNosotros" class="cards">
+            <div class="calidad">
+                <h2>Calidad</h2>
+                <p>
+                    La calidad en la fabricación y el servicio es para nosotros la mayor inversión y garantía de futuro.
+                    Y unos productos fabricados con materias primas de alta calidad, contrastada y garantizada que
+                    responden
+                    al deseo de los clientes más exigentes.
+                </p>
+            </div>
+
+            <div class="compromiso">
+                <h2>Compromiso</h2>
+                <p>
+                    Comprometidos con dar el servicio más eficiente en tiempo de entrega y generar confianza a nuestros
+                    clientes en nuestros productos.
+                </p>
+            </div>
+
+            <div class="valores">
+                <h2>Valores</h2>
+                <p>
+                    La principal premisa y política por la que nos regimos en Trenzatress es un servicio personalizado a
+                    las necesidades de nuestros clientes.
+                </p>
+            </div>
         </div>
+        <div class="formulario">
+            <h1>Contacta con nosotros</h1>
 
-        <!-- tercer card -->
-        <div class="card">
+            <div class="info">
+                <input class="nom" type="text" placeholder="Nombre">
+                <input class="tel" type="text" placeholder="Telefono">
+            </div>
+
+            <div class="info">
+                <input class="apel" type="text" placeholder="Apellidos">
+                <input class="correo" type="text" placeholder="Correo">
+            </div>
+
+            <textarea cols="60" rows="10" placeholder="Tu mensaje"></textarea>
             <br>
-            <h3>Valores</h3>
-            <br>
-            <p>
-                La calidad en la fabricación y el<br> servicio es para nosotros 
-                la mayor<br> inversión y garantía de futuro. Y<br> unos productos fabricados 
-                con<br> materias primas de alta calidad,<br> contrastada y garantizada 
-                que<br> responden al deseo de los clientes<br> más exigentes.
-            </p>
-            <br>
+            <button id="send" type="button" onclick="alerta()">Enviar</button>
         </div>
-    </section>
-    <br><br>
+    </main>
 
-
-    <!-- sección contacto, formulario -->
-    <section id="section3">
-        <br>
-        <h1>Contacta con nosotros</h1>
-        <br>
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Teléfono">
-        <br><br>
-        <input type="text" placeholder="Asunto">
-        <input type="text" placeholder="Correo Electrónico">
-        <br><br>
-        <textarea type="text" placeholder="Tu mensaje" cols="30" rows="10"></textarea>
-        <br><br><br>
-        <button id="send" type="button" onclick="alerta()"><strong>Enviar</strong></button>
-        <br><br><br>
-    </section>
-
-
-    <!-- sección de localización, contacto y redes sociales -->
-    <br><br>
-    <section id="section4">
-        <br><br>
-        <nav class="sub_location">
-            <p><strong>Localización:</strong></p>
-            <p>Ctra. Callosa - Catral, 274 (Barrio San<br> José-Lo Meca)</p>
-            <p>03360 Callosa de Segura, Alicante</p>
-        </nav>
-        
-        <nav class="sub_contact">
-            <p><strong>Contacto:</strong></p>
-            <p>Teléfono: +34 965310199</p>
-            <p>Correo electrónico: trenzatress@gmail.com</p>
-        </nav>
-
-        <nav class="sub_socialmedia">
-            <p><strong>Redes Sociales:</strong></p>
-            <p>Instagram: @trenzatress</p>
-            <p>Facebook: trenzatress</p>
-            <p>Linkedin: Trenzatress</p>
-        </nav>
-    </section>
-
-
-    <br><br>
-    <!-- margen final; contiene nombreEmpresa, año y el @ -->
     <footer id="footer">
-        <p>Trenzatress, S.L. 2023 ®</p>
+        <div class="high-footer">
+            <div class="localizacion">
+                <h4>Localizacion</h4>
+                <ul>
+                    <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
+                    <li>03360 Callosa de Segura, Alicante</li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Teléfono: +34 965310199</li>
+                    <li>Correo electronico: trenzatress@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li>Twitter: @trenzatress</li>
+                    <li>Instagram: @trenzatr3ss</li>
+                    <li>Facebook: @trenzatress</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="low-footer">
+            TrenzaTress, S.L
+        </div>
     </footer>
 </body>
 </html>

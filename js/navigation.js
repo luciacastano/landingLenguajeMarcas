@@ -1,4 +1,18 @@
-/* MENU HAMBURGUESA -> NAVEGACIÓN LINEAL */
+/* Menú hamburguesa (hecho por Adrián) para la navegación lineal */
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
+
+
+
 
 /* Mensaje de alerta al madar el formulario de la página inicial */
 function alerta() {
