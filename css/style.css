@@ -28,6 +28,16 @@ header {
     color: #1c1c1c;
 }
 
+.descuento {
+    background-color: #c29a56;
+    width: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+  }
+
 .abrir-menu,
 .cerrar-menu {
     display: none;

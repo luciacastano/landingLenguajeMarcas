@@ -13,138 +13,133 @@
 </head>
 <body>
     
-    <header id="header">
-        <nav class="logo">
-            <a href="index.html"><img src="media/img/logo.jpg" alt="Logo Landing page" width="100px" height="50px"></a>
-        </nav>
-        <!-- <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button> -->
-        
-        <!-- <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button> -->
-        <nav class="lateral_menu">
-            <ul>
-                <!-- ENLAZAR LAS SECCIONES QUE QUEDAS -->
-                <li><a href="#">Productos</a></li> <!-- lo manda al inicio de esa misma página -->
-                <li><a href="">Sobre Nosotros</a></li>
-                <li><a href="">Contacto</a></li>
+    <header>
+        <img class="logo" src="media/img/logo.jpg" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html#sobreNosotros">Sobre Nosotros</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- SECCION DE DESCUENTOS -->
-    <br>
-    <section class="discount">
-        <p>Descuentos a partir de 50€</p>
-    </section>
+    <!-- franja descuentos -->
+    <div class="descuento">Descuentos a pedidos superiores de 200€</div>
 
-    <!-- SECCION CATEGORIAS, con el menú desplegable -->
+    <!-- seccion categorías, con el menú desplegable -->
     <br>
     <section class="category">
         <p>Categorías</p>
     </section>
+    <br>
 
-    <!-- SECCION, de esta sección ahora mismo pasamos 
+    <!-- seccion slider, de esta sección ahora mismo pasamos, se hace en clase a la vuelta
     <section id="carrusell">
 
     </section>-->
 
-    <!-- SECCION CARDS, muestra los productos en cards -->
+    <!-- cards productos -->
     <!-- en este apartado vamos a hacer un grid específico para esto -->
     <br>
     <section id="cards_container">
         <div class="product">
             <a href="" onclick="alCarro()"><img class="carrito" src="media/img/carrito.png" alt="carrito" width="20px" height="20px"></a>
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
 
         <div class="product">
-            <img src="media/img/rieles.jpg" alt="rieles" width="250px" height="250px">
+            <a href="detallesProducto.html"><img src="media/img/detalleProducto.jpg" alt="rieles" width="250px" height="250px"></a>
             <!-- ICONO CARRITO -->
             <p class="titulo">Rieles Extensibles 200m</p>
             <p class="precio">12€</p>
         </div>
     </section>
 
-    <br><br>
-    <!-- sección de localización, contacto y redes sociales -->
-    <br><br>
-    <section id="section4">
-        <br><br>
-        <nav class="sub_location">
-            <p><strong>Localización:</strong></p>
-            <p>Ctra. Callosa - Catral, 274 (Barrio San<br> José-Lo Meca)</p>
-            <p>03360 Callosa de Segura, Alicante</p>
-        </nav>
-        
-        <nav class="sub_contact">
-            <p><strong>Contacto:</strong></p>
-            <p>Teléfono: +34 965310199</p>
-            <p>Correo electrónico: trenzatress@gmail.com</p>
-        </nav>
-
-        <nav class="sub_socialmedia">
-            <p><strong>Redes Sociales:</strong></p>
-            <p>Instagram: @trenzatress</p>
-            <p>Facebook: trenzatress</p>
-            <p>Linkedin: Trenzatress</p>
-        </nav>
-    </section>
-
-
-    <br><br>
-    <!-- margen final; contiene nombreEmpresa, año y el @ -->
+    <br><br><br>
     <footer id="footer">
-        <p>Trenzatress, S.L. 2023 ®</p>
+        <div class="high-footer">
+            <div class="localizacion">
+                <h4>Localizacion</h4>
+                <ul>
+                    <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
+                    <li>03360 Callosa de Segura, Alicante</li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Teléfono: +34 965310199</li>
+                    <li>Correo electronico: trenzatress@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li>Twitter: @trenzatress</li>
+                    <li>Instagram: @trenzatr3ss</li>
+                    <li>Facebook: @trenzatress</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="low-footer">
+            TrenzaTress, S.L
+        </div>
     </footer>
 </body>
 </html>
