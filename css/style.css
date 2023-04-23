@@ -337,12 +337,16 @@ body footer .low-footer{
     float: right;
 }
 
-#cards_container .product .contenido .titulo{
-    float: left;
-    font-size: 1.1rem;
+#cards_container .product .miProducto{
+    padding-top: -555px;
 }
 
-#cards_container .product .contenido .precio{
+#cards_container .product .titulo{
+    float: left;
+    font-size: 1.15rem;
+}
+
+#cards_container .product .precio{
     float: right;
     font-size: 1.1rem;
 }
